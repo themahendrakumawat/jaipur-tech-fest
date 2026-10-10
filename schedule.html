@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur Tech Fest 2026 | Schedule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              800: '#9a3412',
+              900: '#7c2d12',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-amber-50 text-stone-800 dark:bg-stone-900 dark:text-stone-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 bg-amber-100/90 dark:bg-stone-800/90 backdrop-blur border-b border-amber-200 dark:border-stone-700">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold tracking-tight text-amber-900 dark:text-amber-400">
+        Jaipur Tech Fest <span class="text-xs bg-amber-200 dark:bg-amber-900/60 text-amber-900 dark:text-amber-300 px-2 py-0.5 rounded-full">2026</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-amber-700 dark:hover:text-amber-300 transition">Home</a>
+        <a href="schedule.html" class="text-amber-900 dark:text-amber-400 font-semibold underline underline-offset-4">Schedule</a>
+        <a href="speakers.html" class="hover:text-amber-700 dark:hover:text-amber-300 transition">Speakers</a>
+        <a href="register.html" class="bg-amber-700 hover:bg-amber-800 text-white px-4 py-1.5 rounded-lg transition shadow-sm">Register</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="p-2 text-xs bg-amber-200 dark:bg-stone-700 rounded-md hover:opacity-80">
+          🌙 / ☀️
+        </button>
+        <a href="register.html" class="md:hidden text-xs bg-amber-700 text-white px-3 py-1.5 rounded-md">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
+    <!-- Page Header -->
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-extrabold tracking-tight text-amber-950 dark:text-amber-400 mb-2">Event Schedule</h1>
+      <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 max-w-md mx-auto">
+        3 days packed with tech keynotes, hands-on workshops, and networking sessions.
+      </p>
+    </div>
+
+    <!-- Day Selector Tabs -->
+    <div class="flex justify-center gap-2 sm:gap-4 mb-8">
+      <button class="bg-amber-800 text-white font-medium px-4 py-2 rounded-lg text-xs sm:text-sm shadow-sm">12 Sept (Day 1)</button>
+      <button class="bg-amber-200 text-amber-900 dark:bg-stone-800 dark:text-stone-300 hover:bg-amber-300 font-medium px-4 py-2 rounded-lg text-xs sm:text-sm transition">13 Sept (Day 2)</button>
+      <button class="bg-amber-200 text-amber-900 dark:bg-stone-800 dark:text-stone-300 hover:bg-amber-300 font-medium px-4 py-2 rounded-lg text-xs sm:text-sm transition">14 Sept (Day 3)</button>
+    </div>
+
+    <!-- Timeline Grid Section -->
+    <div class="space-y-4 max-w-4xl mx-auto">
+      
+      <!-- Session Slot 1 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-sm">
+        <div class="sm:w-1/4">
+          <span class="inline-block bg-amber-100 dark:bg-stone-700 text-amber-800 dark:text-amber-300 text-xs font-semibold px-2.5 py-1 rounded-md">
+            10:00 AM - 11:30 AM
+          </span>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Birla Main Hall</p>
+        </div>
+        <div class="sm:w-3/4">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Keynote: Future of AI & Web Architecture</h2>
+          <p class="text-xs text-stone-600 dark:text-stone-300 mt-1">Exploring next-generation distributed systems and AI integration in modern software engineering.</p>
+          <p class="text-xs font-medium text-amber-700 dark:text-amber-400 mt-2">Speaker: Dr. Aris Patel</p>
+        </div>
+      </div>
+
+      <!-- Session Slot 2 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-sm">
+        <div class="sm:w-1/4">
+          <span class="inline-block bg-amber-100 dark:bg-stone-700 text-amber-800 dark:text-amber-300 text-xs font-semibold px-2.5 py-1 rounded-md">
+            11:45 AM - 01:15 PM
+          </span>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Lab Hall B</p>
+        </div>
+        <div class="sm:w-3/4">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Hands-on: Responsive Design with Tailwind CSS</h2>
+          <p class="text-xs text-stone-600 dark:text-stone-300 mt-1">Practical workshop on mobile-first workflows, grid systems, and layout optimization.</p>
+          <p class="text-xs font-medium text-amber-700 dark:text-amber-400 mt-2">Speaker: Sarane Karna</p>
+        </div>
+      </div>
+
+      <!-- Session Slot 3 (Break) -->
+      <div class="bg-amber-100/60 dark:bg-stone-800/50 border border-dashed border-amber-300 dark:border-stone-600 rounded-xl p-3 text-center">
+        <span class="text-xs font-medium text-amber-900 dark:text-amber-300">🍱 01:15 PM - 02:15 PM &nbsp;|&nbsp; Networking Lunch & Refreshments</span>
+      </div>
+
+      <!-- Session Slot 4 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl p-4 sm:p-5 flex flex-col sm:flex-row gap-4 items-start sm:items-center justify-between shadow-sm">
+        <div class="sm:w-1/4">
+          <span class="inline-block bg-amber-100 dark:bg-stone-700 text-amber-800 dark:text-amber-300 text-xs font-semibold px-2.5 py-1 rounded-md">
+            02:15 PM - 04:00 PM
+          </span>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Auditorium 2</p>
+        </div>
+        <div class="sm:w-3/4">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Panel Discussion: Open Source & Career Growth</h2>
+          <p class="text-xs text-stone-600 dark:text-stone-300 mt-1">Senior developers share strategies on git hygiene, contributing to OSS, and building developer portfolios.</p>
+          <p class="text-xs font-medium text-amber-700 dark:text-amber-400 mt-2">Speakers: Seama Rama, Scame Mams</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-amber-950 text-amber-200 py-6 text-center text-xs border-t border-amber-900">
+    <p>© 2026 Jaipur Tech Fest. Built for Milestone 1 Project.</p>
+  </footer>
+
+  <script>
+    const themeBtn = document.getElementById('themeToggle');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

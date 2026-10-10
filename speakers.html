@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jaipur Tech Fest 2026 | Speakers</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fff7ed',
+              100: '#ffedd5',
+              500: '#f97316',
+              800: '#9a3412',
+              900: '#7c2d12',
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-amber-50 text-stone-800 dark:bg-stone-900 dark:text-stone-100 min-h-screen flex flex-col font-sans transition-colors duration-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-50 bg-amber-100/90 dark:bg-stone-800/90 backdrop-blur border-b border-amber-200 dark:border-stone-700">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="index.html" class="text-xl font-bold tracking-tight text-amber-900 dark:text-amber-400">
+        Jaipur Tech Fest <span class="text-xs bg-amber-200 dark:bg-amber-900/60 text-amber-900 dark:text-amber-300 px-2 py-0.5 rounded-full">2026</span>
+      </a>
+
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium">
+        <a href="index.html" class="hover:text-amber-700 dark:hover:text-amber-300 transition">Home</a>
+        <a href="schedule.html" class="hover:text-amber-700 dark:hover:text-amber-300 transition">Schedule</a>
+        <a href="speakers.html" class="text-amber-900 dark:text-amber-400 font-semibold underline underline-offset-4">Speakers</a>
+        <a href="register.html" class="bg-amber-700 hover:bg-amber-800 text-white px-4 py-1.5 rounded-lg transition shadow-sm">Register</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" aria-label="Toggle dark mode" class="p-2 text-xs bg-amber-200 dark:bg-stone-700 rounded-md hover:opacity-80">
+          🌙 / ☀️
+        </button>
+        <a href="register.html" class="md:hidden text-xs bg-amber-700 text-white px-3 py-1.5 rounded-md">Register</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow max-w-6xl mx-auto px-4 py-10 w-full">
+    <!-- Section Header -->
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-extrabold tracking-tight text-amber-950 dark:text-amber-400 mb-2">Keynote Speakers</h1>
+      <p class="text-xs sm:text-sm text-stone-600 dark:text-stone-300 max-w-md mx-auto">
+        Learn from industry leaders, tech architects, and innovators driving the future of web technologies.
+      </p>
+    </div>
+
+    <!-- Responsive Card Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      
+      <!-- Speaker Card 1 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600" alt="Dr. Aris Patel" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Dr. Aris Patel</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">Chief AI Strategist</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Neuro Dynamics Inc.</p>
+        </div>
+      </div>
+
+      <!-- Speaker Card 2 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600" alt="Sarane Karna" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Sarane Karna</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">Lead Frontend Architect</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Cloud Systems Ltd.</p>
+        </div>
+      </div>
+
+      <!-- Speaker Card 3 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=600" alt="Scame Mams" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Scame Mams</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">VP of Engineering</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">DevScale Global</p>
+        </div>
+      </div>
+
+      <!-- Speaker Card 4 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=600" alt="Dr. Aria Patel" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Dr. Aria Patel</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">Head of Research</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">DataLabs Jaipur</p>
+        </div>
+      </div>
+
+      <!-- Speaker Card 5 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600" alt="Seama Rama" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Seama Rama</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">Principal UI/UX Designer</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Design Crafted</p>
+        </div>
+      </div>
+
+      <!-- Speaker Card 6 -->
+      <div class="bg-white dark:bg-stone-800 border border-amber-200 dark:border-stone-700 rounded-xl overflow-hidden shadow-sm hover:shadow-md transition">
+        <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=600" alt="Aman Sharma" class="w-full h-56 object-cover object-top">
+        <div class="p-4 text-center">
+          <h2 class="text-base font-bold text-stone-900 dark:text-stone-100">Aman Sharma</h2>
+          <p class="text-xs text-amber-800 dark:text-amber-400 font-medium">DevOps Evangelist</p>
+          <p class="text-[11px] text-stone-500 dark:text-stone-400 mt-1">CloudNative India</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="bg-amber-950 text-amber-200 py-6 text-center text-xs border-t border-amber-900">
+    <p>© 2026 Jaipur Tech Fest. Built for Milestone 1 Project.</p>
+  </footer>
+
+  <script>
+    const themeBtn = document.getElementById('themeToggle');
+    themeBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
